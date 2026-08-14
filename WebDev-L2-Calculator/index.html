@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A modern and responsive calculator built with HTML, CSS, and vanilla JavaScript."
+    />
+
+    <title>Calculator | Ezedin Mohammed</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="calculator-app">
+      <section class="calculator" aria-label="Calculator">
+        <div class="calculator-display">
+          <div
+            class="display-expression"
+            id="display-expression"
+            aria-label="Current expression"
+          >
+            0
+          </div>
+
+          <div
+            class="display-result"
+            id="display-result"
+            aria-live="polite"
+            aria-label="Calculator result"
+          >
+            0
+          </div>
+        </div>
+
+        <div class="calculator-buttons">
+          <button
+            type="button"
+            class="calculator-button calculator-button--control"
+            data-action="clear"
+          >
+            C
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--control"
+            data-action="backspace"
+            aria-label="Backspace"
+          >
+            ⌫
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--operator"
+            data-operator="/"
+            aria-label="Divide"
+          >
+            ÷
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--operator"
+            data-operator="*"
+            aria-label="Multiply"
+          >
+            ×
+          </button>
+
+          <button type="button" class="calculator-button" data-number="7">
+            7
+          </button>
+
+          <button type="button" class="calculator-button" data-number="8">
+            8
+          </button>
+
+          <button type="button" class="calculator-button" data-number="9">
+            9
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--operator"
+            data-operator="-"
+            aria-label="Subtract"
+          >
+            −
+          </button>
+
+          <button type="button" class="calculator-button" data-number="4">
+            4
+          </button>
+
+          <button type="button" class="calculator-button" data-number="5">
+            5
+          </button>
+
+          <button type="button" class="calculator-button" data-number="6">
+            6
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--operator"
+            data-operator="+"
+            aria-label="Add"
+          >
+            +
+          </button>
+
+          <button type="button" class="calculator-button" data-number="1">
+            1
+          </button>
+
+          <button type="button" class="calculator-button" data-number="2">
+            2
+          </button>
+
+          <button type="button" class="calculator-button" data-number="3">
+            3
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--equals"
+            data-action="equals"
+            aria-label="Equals"
+          >
+            =
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button calculator-button--zero"
+            data-number="0"
+          >
+            0
+          </button>
+
+          <button
+            type="button"
+            class="calculator-button"
+            data-number="."
+            aria-label="Decimal point"
+          >
+            .
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
