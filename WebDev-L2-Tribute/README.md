@@ -173,23 +173,27 @@ The "One Crown. One State." section is deliberately written as an **ambition** r
 
 ![Mobile screenshot](assets/screenshots/mobile.png)
 
-## 🌐 Deployment
 
-The project is a static website and can be deployed with Vercel, GitHub Pages, Netlify, or another static hosting platform.
+## 🌐 Live Demo
 
-### Vercel CLI
+[Open the live] https://webdev-l2-tribute.vercel.app and
+[Second Domain] https://emperor-tewodros.vercel.app
 
-From the project directory:
+## 🚀 Deployment
 
-```bash
-vercel
-```
+The application is deployed using **Vercel**.
 
-For a production deployment after testing:
+The project is a static HTML, CSS, and JavaScript application, so no build process, backend server, database, or environment variables are required.
 
-```bash
-vercel --prod
-```
+### Deployment Platform
+
+- Vercel
+- Production deployment
+- Responsive production-tested application
+
+## 🧪 Testing
+
+The deployed application was tested after production deployment.
 
 ## ✅ Oasis Infobyte Task 2 Checklist
 
