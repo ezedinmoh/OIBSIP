@@ -75,9 +75,10 @@ createdAt: "ISO date",
 completedAt: null
 }
 ```
-  Tasks are stored in the browser using:
 
- localStorage
+Tasks are stored in the browser using:
+
+localStorage
 
 Whenever a task is added, edited, completed, reopened, or deleted, the application:
 
@@ -237,56 +238,61 @@ http://localhost:5500
 
 ### 📸 Screenshots
 
-Desktop
 
-Mobile
+### Desktop
+
+![Desktop Screenshot](assets/screenshots/desktop.png)
+
+### Mobile
+
+![Mobile Screenshot](assets/screenshots/mobile.png)
 
 ### 🌐 Live Demo
 
-🔗 **Live Website:** [Nova-task.vercel.app]
+🔗 **Live Website:** [\[Nova-task-one.vercel.app\]](https://nova-task-one.vercel.app)
 
 ### 🧪 Testing
 
 The application has been tested for:
 
 - Adding tasks
- 
+
 - Preventing empty tasks
- 
+
 - Editing tasks
- 
+
 - Saving edited tasks
- 
+
 - Cancelling task edits
- 
+
 - Saving edits with the Enter key
- 
+
 - Cancelling edits with the Escape key
- 
+
 - Completing tasks
- 
+
 - Moving completed tasks back to pending
- 
+
 - Completing tasks from the action menu
 
 - Deleting tasks
 
 - Confirming task deletion
- 
+
 - Updating task statistics
- 
+
 - Updating section task counts
- 
+
 - Displaying pending empty states
- 
+
 - Displaying completed empty states
- 
+
 - Hiding empty states when tasks exist
- 
+
 - Restoring tasks after page refresh
- 
+
 - Responsive desktop layout
- 
+
 - Responsive mobile layout
 
 ### 🔒 Data & Privacy
@@ -310,13 +316,13 @@ The goal of the project is to demonstrate practical frontend development skills,
 - State management
 
 - Browser storage
- 
+
 - Responsive design
- 
+
 - Accessibility
- 
+
 - User interface design
- 
+
 - JavaScript application logic
 
 ### 👨‍💻 Author
@@ -332,8 +338,6 @@ Portfolio: https://ezedinmoh.vercel.app
 ### 📄 License
 
 This project was created for educational and internship purposes.
-
-
 
 ```
 Built with ❤️ using HTML, CSS, and JavaScript.
