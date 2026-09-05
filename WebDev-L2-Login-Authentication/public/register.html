@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Create your secure NEXUS account."
+    >
+
+    <title>NEXUS — Create Account</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-layout">
+
+        <!-- Brand / Showcase -->
+
+        <section class="auth-showcase">
+            <a
+                href="/"
+                class="brand"
+                aria-label="NEXUS home"
+            >
+                <span class="brand-mark">N</span>
+
+                <span class="brand-name">
+                    NEXUS
+                </span>
+            </a>
+
+            <div class="showcase-content">
+                <p class="showcase-eyebrow">
+                    Get started
+                </p>
+
+                <h1>
+                    Build your
+                    <span>secure space.</span>
+                </h1>
+
+                <p>
+                    Create your account and experience a clean,
+                    modern authentication system built with security
+                    and simplicity in mind.
+                </p>
+            </div>
+
+            <div class="security-note">
+                <span
+                    class="security-icon"
+                    aria-hidden="true"
+                >
+                    🔒
+                </span>
+
+                <span>
+                    Passwords are securely hashed before storage
+                </span>
+            </div>
+        </section>
+
+        <!-- Registration Panel -->
+
+        <section
+            class="auth-panel"
+            aria-labelledby="register-title"
+        >
+            <div class="auth-panel-header">
+                <h2 id="register-title">
+                    Create your account
+                </h2>
+
+                <p>
+                    Enter your details to get started.
+                </p>
+            </div>
+
+            <form
+                class="auth-form"
+                id="register-form"
+                novalidate
+            >
+
+                <!-- Name -->
+
+                <div class="form-group">
+                    <label for="name">
+                        Full name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        autocomplete="name"
+                        minlength="2"
+                        maxlength="100"
+                        required
+                    >
+
+                    <p
+                        class="field-error"
+                        id="name-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Email -->
+
+                <div class="form-group">
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <p
+                        class="field-error"
+                        id="email-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Password -->
+
+                <div class="form-group">
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="8"
+                        required
+                    >
+
+                    <p class="password-hint">
+                        Use at least 8 characters and include at least
+                        one number.
+                    </p>
+
+                    <p
+                        class="field-error"
+                        id="password-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="form-group">
+                    <label for="confirm-password">
+                        Confirm password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirmPassword"
+                        placeholder="Repeat your password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <p
+                        class="field-error"
+                        id="confirm-password-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Server Message -->
+
+                <p
+                    class="form-message"
+                    id="form-message"
+                    aria-live="polite"
+                ></p>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    id="register-button"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Already have an account?
+
+                <a href="/">
+                    Sign in
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/register.js" defer></script>
+
+</body>
+</html>

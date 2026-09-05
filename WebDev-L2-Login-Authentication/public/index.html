@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NEXUS is a secure modern authentication system."
+    >
+
+    <title>NEXUS — Sign In</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-layout">
+
+        <!-- Brand / Showcase -->
+
+        <section class="auth-showcase">
+            <a
+                href="/"
+                class="brand"
+                aria-label="NEXUS home"
+            >
+                <span class="brand-mark">N</span>
+
+                <span class="brand-name">
+                    NEXUS
+                </span>
+            </a>
+
+            <div class="showcase-content">
+                <p class="showcase-eyebrow">
+                    Secure access
+                </p>
+
+                <h1>
+                    Your workspace,
+                    <span>connected.</span>
+                </h1>
+
+                <p>
+                    A clean and secure authentication experience built
+                    with modern web technologies.
+                </p>
+            </div>
+
+            <div class="security-note">
+                <span
+                    class="security-icon"
+                    aria-hidden="true"
+                >
+                    🔒
+                </span>
+
+                <span>
+                    Protected with secure authentication
+                </span>
+            </div>
+        </section>
+
+        <!-- Login Panel -->
+
+        <section
+            class="auth-panel"
+            aria-labelledby="login-title"
+        >
+            <div class="auth-panel-header">
+                <h2 id="login-title">
+                    Welcome back
+                </h2>
+
+                <p>
+                    Enter your details to access your account.
+                </p>
+            </div>
+
+            <form
+                class="auth-form"
+                id="login-form"
+                novalidate
+            >
+
+                <!-- Email -->
+
+                <div class="form-group">
+                    <label for="email">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <p
+                        class="field-error"
+                        id="email-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Password -->
+
+                <div class="form-group">
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <p
+                        class="field-error"
+                        id="password-error"
+                        aria-live="polite"
+                    ></p>
+                </div>
+
+                <!-- Server Message -->
+
+                <p
+                    class="form-message"
+                    id="form-message"
+                    aria-live="polite"
+                ></p>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                    id="login-button"
+                >
+                    Sign In
+                </button>
+
+            </form>
+
+            <p class="auth-switch">
+                Don't have an account?
+
+                <a href="register.html">
+                    Create one
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <script src="js/login.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Your secure NEXUS workspace dashboard."
+    >
+
+    <title>NEXUS — Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <header class="dashboard-header">
+        <div class="dashboard-header-inner">
+
+            <a
+                href="dashboard.html"
+                class="brand"
+                aria-label="NEXUS dashboard"
+            >
+                <span class="brand-mark">N</span>
+
+                <span class="brand-name">
+                    NEXUS
+                </span>
+            </a>
+
+            <button
+                type="button"
+                class="logout-button"
+                id="logout-button"
+            >
+                Sign Out
+            </button>
+
+        </div>
+    </header>
+
+    <main
+        class="dashboard-main"
+        id="dashboard-main"
+        hidden
+    >
+
+        <section aria-labelledby="dashboard-title">
+
+            <p class="dashboard-eyebrow">
+                Secure workspace
+            </p>
+
+            <h1 id="dashboard-title">
+                Welcome back,
+                <span id="dashboard-user-name">
+                    User
+                </span>.
+            </h1>
+
+            <p class="dashboard-description">
+                Your account is securely authenticated and your
+                session is currently active.
+            </p>
+
+        </section>
+
+        <section
+            class="dashboard-grid"
+            aria-label="Account information"
+        >
+
+            <!-- Account -->
+
+            <article class="dashboard-card">
+                <p class="dashboard-card-label">
+                    Account
+                </p>
+
+                <h2
+                    class="user-name"
+                    id="account-name"
+                >
+                    Loading...
+                </h2>
+
+                <p
+                    class="user-email"
+                    id="account-email"
+                >
+                    Loading account information...
+                </p>
+            </article>
+
+            <!-- Session -->
+
+            <article
+                class="dashboard-card status-card"
+            >
+                <div>
+                    <p class="dashboard-card-label">
+                        Session status
+                    </p>
+
+                    <div
+                        class="status-indicator"
+                        role="status"
+                    >
+                        <span
+                            class="status-dot"
+                            aria-hidden="true"
+                        ></span>
+
+                        <span>
+                            Authenticated
+                        </span>
+                    </div>
+                </div>
+
+                <p>
+                    Your session is protected using secure
+                    authentication cookies.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <div
+        class="dashboard-loading"
+        id="dashboard-loading"
+        role="status"
+        aria-live="polite"
+    >
+        Checking your secure session...
+    </div>
+
+    <script src="js/dashboard.js" defer></script>
+
+</body>
+</html>
