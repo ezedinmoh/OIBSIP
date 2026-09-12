@@ -39,7 +39,7 @@ No frontend framework or build system is required.
 ## 📁 Project Structure
 
 ```text
-WebDev-L2-Tribute/
+WebDev-L2-TributePage/
 ├── assets/
 │   ├── images/
 │   │   ├── ethiopia-1850-map.webp
