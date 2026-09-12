@@ -220,7 +220,7 @@ git clone git@github.com:ezedinmoh/OIBSIP.git
 
 Navigate to the Project
 
-cd OIBSIP/WebDev-L3-ToDo-App
+cd OIBSIP/WebDev-L2-ToDo
 
 Run Locally
 
